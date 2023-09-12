@@ -1,0 +1,243 @@
+﻿<!doctype html><html lang="pt-Br"><head><!-- Required meta tags --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel="stylesheet" href="../ajax/libs/animate.css/3.7.2/animate.min.css"><!-- font awesome 5 free --><link rel="stylesheet" href="../ajax/libs/font-awesome/5.13.0/css/all.min.css"><!-- Bootstrap CSS --><link rel="stylesheet" href="../bootstrap/4.4.1/css/bootstrap.min.css"><link rel="manifest" href="../manifest.json"><script src="../npm/axios/dist/axios.min.js"></script><link href="../boxicons%402.1.2/css/boxicons.min.css" rel="stylesheet"><style>body {
+        max-width: 767px;
+        margin: 0 auto; 
+      }</style><script async="" src="../gtag/js?id=G-6QEYN242QF"></script><link href="../css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="app-80add7425a.css"><title>Avaliador Premiado Oficial - Pesquisas</title><meta http-equiv="cache-control" content="max-age=0"><meta http-equiv="cache-control" content="no-cache"><meta http-equiv="expires" content="0"><meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"><meta http-equiv="pragma" content="no-cache"><style>nav.nav {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.75rem;
+    color: #000000;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1.25rem;
+}
+
+.nav img {
+    object-fit: contain;
+    width: 9rem;
+    height: 4rem;
+}
+
+.saldo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    border-radius: 999px;
+    background: #a06cf7;
+    white-space: nowrap;
+    width: 120px;
+}
+
+#saldo-txt {
+    color: white;
+    text-align: center;
+    font-weight: 900 !important;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #a06cf7;
+    color: white;
+    font-size: 0.8rem;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 1rem;
+    box-shadow: rgba(149, 0, 255, 0.519) 0px 4px 10px;
+}
+
+.headline h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: white;
+    font-weight: 700 !important;
+}</style></head><body><!--Offer Alert ================================ --><div class="offer-alert" style="display: none;"><div class="offer-alert__container container"><span>🔥😍 Parabéns! Você foi contemplado!</span> <a href="/vip" class="offer-alert__btn">SAIBA MAIS</a></div></div><!--Hero ====================================== --><header class="hero container-fluid border-bottom" style="padding-right:  0px!important; padding-left:  0px!important; margin-right:  0px!important; margin-left: 0px!important;"><nav class="nav hero-nav container px-4 px-lg-0 mx-auto"><a href="/pesquisas"><img class="logo" src="assets/imgs/logo.png"></a><a href="../saque"><div class="saldo"><span id="saldo-txt"></span></div></a></nav></header><!-- ===================================== --><div id="product" class="block-5 space-between-blocks"><div class="container"><div class="row align-items-center flex-column-reverse flex-lg-row px-2"><!-- RIGHT CONTENT --><div class="col-lg-12"><div class="card-2 d-flex"><div style="padding-top: 14px;"><span class="card-2__symbol mx-auto"><i class="fas fa-chart-line"></i></span></div><div class="px-2"></div><div class="col-lg-12"><div class="col-mx-6"><h3 class="card-2__title mb-2">Meta diária : <span id="countAvaliacoesRealizadas">0</span> de <span id="countAvaliacoesTotais">10</span> pesquisas respondidas</h3></div><div class="progress"><div class="progress-bar" role="progressbar" style="width: 0%;background-color: #6f42c1" aria-valuenow="90" aria-valuemin="0" id="percent" aria-valuemax="100">0%</div></div></div></div><br><div class="card-2-1 d-flex"><div class="px-2"></div><div><p class="card-2__paragraph">Atinja 100% e ganhe um bônus de R$ 10,00</p></div></div><br><div class="card-2 d-flex"><div style="padding-top: 10px;"><span class="card-2__symbol mx-auto"><i class="fas fa-wallet"></i></span></div><div class="col-mx-6"><h3 class="card-2__title" style="padding-left: 15px;padding-top: 8px;">Meu saldo</h3></div><div class="col-mx-6"><span class="plan-card-2__price" style="padding-left: 100px;" id="saldo"><img src="../assets/image/loading.gif" style="width: 40px;"></span></div></div><ul class="plan-features list-unstyled mt-5 mb-0"><li class="plan-features__li"><span class="plan-features__li-icon mx-1"><svg class="bi bi-check2-circle" width="1em" height="1em" viewbox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path><path fill-rule="evenodd" d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z"></path></svg> </span><span class="mx-3">Minhas pesquisas</span></li></ul><!----------------------------------------------------------><div id="pesquisa-list"><div class="pesquisa" id="loading-pesquisas"><div class="card-2 d-flex"><div><span class="mx-2" style="margin-right: 120px;"><div class="px-2" style="padding-left: 100px;"></div></span></div><div class="px-2" style="margin-right: 120px;"></div><div><img src="../assets/image/loading.gif" style="width: 40px;"></div></div></div><br></div><!----------------------------------------------------------></div></div></div></div><!-- ===================================== --><div class="navbar"><a href="../pesquisas" class="nav-link nav-active"><i class="bx bx-home"></i> <span class="nav-link-title">Inicio</span> </a><a href="../saque" class="nav-link"><i class="bx bx-money"></i> <span class="nav-link-title">Saques</span> </a><a href="../vip" class="nav-link"><i class="bx bx-gift"></i> <span class="nav-link-title">VIP</span></a></div><style>.modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+            }
+
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+                animation-name: modalopen;
+                animation-duration: 0.5s;
+            }
+
+            @keyframes modalopen {
+                from {
+                    opacity: 0;
+                    transform: scale(0.8);
+                }
+                to {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }</style><div id="myModal" class="modal"><div class="modal-content"><style>.checkmark-container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 1rem;
+                    }
+
+                    .confetti {
+                        position: absolute;
+                        animation: grow 1.4s cubic-bezier(0.42, 0, 0.275, 1.155) both alternate-reverse infinite;
+                    }
+
+                    .confetti:nth-child(1) {
+                        width: 12px;
+                        height: 12px;
+                        left: 12px;
+                        top: 16px;
+                    }
+
+                    .confetti:nth-child(2) {
+                        width: 18px;
+                        height: 18px;
+                        left: 168px;
+                        top: 84px;
+                    }
+
+                    .confetti:nth-child(3) {
+                        width: 10px;
+                        height: 10px;
+                        left: 32px;
+                        top: 162px;
+                    }
+
+                    .confetti:nth-child(4) {
+                        width: 20px;
+                        height: 20px;
+                        left: 82px;
+                        top: -12px;
+                    }
+
+                    .confetti:nth-child(5) {
+                        width: 14px;
+                        height: 14px;
+                        left: 125px;
+                        top: 162px;
+                    }
+
+                    .confetti:nth-child(6) {
+                        width: 10px;
+                        height: 10px;
+                        left: 16px;
+                        top: 16px;
+                    }
+
+                    .confetti:nth-child(1) {
+                        animation-delay: 0.7s;
+                    }
+
+                    .confetti:nth-child(2) {
+                        animation-delay: 1.4s;
+                    }
+
+                    .confetti:nth-child(3) {
+                        animation-delay: 2.1s;
+                    }
+
+                    .confetti:nth-child(4) {
+                        animation-delay: 2.8s;
+                    }
+
+                    .confetti:nth-child(5) {
+                        animation-delay: 3.5s;
+                    }
+
+                    .confetti:nth-child(6) {
+                        animation-delay: 4.2s;
+                    }
+
+                    .checkmark {
+                        position: relative;
+                        padding: 30px;
+                    }
+
+                    .checkmark__check {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        z-index: 10;
+                        transform: translate3d(-50%, -50%, 0);
+                        fill: #fff;
+                    }
+
+                    .checkmark__back {
+                        animation: rotate 35s linear both infinite;
+                    }
+
+                    @keyframes rotate {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    @keyframes grow {
+                        0%,
+                        100% {
+                            transform: scale(0);
+                        }
+                        50% {
+                            transform: scale(1);
+                        }
+                    }
+
+                    @keyframes checkmark {
+                        0%,
+                        100% {
+                            opacity: 0;
+                            transform: scale(0);
+                        }
+                        10%,
+                        50%,
+                        90% {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }</style><div class="checkmark-container"><div class="checkmark"><svg class="confetti" height="19" viewbox="0 0 19 19" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M8.296.747c.532-.972 1.393-.973 1.925 0l2.665 4.872 4.876 2.66c.974.532.975 1.393 0 1.926l-4.875 2.666-2.664 4.876c-.53.972-1.39.973-1.924 0l-2.664-4.876L.76 10.206c-.972-.532-.973-1.393 0-1.925l4.872-2.66L8.296.746z" fill="#00C8E5"></path></svg> <svg class="confetti" height="19" viewbox="0 0 19 19" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M8.296.747c.532-.972 1.393-.973 1.925 0l2.665 4.872 4.876 2.66c.974.532.975 1.393 0 1.926l-4.875 2.666-2.664 4.876c-.53.972-1.39.973-1.924 0l-2.664-4.876L.76 10.206c-.972-.532-.973-1.393 0-1.925l4.872-2.66L8.296.746z" fill="#00C8E5"></path></svg> <svg class="confetti" height="19" viewbox="0 0 19 19" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M8.296.747c.532-.972 1.393-.973 1.925 0l2.665 4.872 4.876 2.66c.974.532.975 1.393 0 1.926l-4.875 2.666-2.664 4.876c-.53.972-1.39.973-1.924 0l-2.664-4.876L.76 10.206c-.972-.532-.973-1.393 0-1.925l4.872-2.66L8.296.746z" fill="#00C8E5"></path></svg> <svg class="confetti" height="19" viewbox="0 0 19 19" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M8.296.747c.532-.972 1.393-.973 1.925 0l2.665 4.872 4.876 2.66c.974.532.975 1.393 0 1.926l-4.875 2.666-2.664 4.876c-.53.972-1.39.973-1.924 0l-2.664-4.876L.76 10.206c-.972-.532-.973-1.393 0-1.925l4.872-2.66L8.296.746z" fill="#00C8E5"></path></svg> <svg class="confetti" height="19" viewbox="0 0 19 19" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M8.296.747c.532-.972 1.393-.973 1.925 0l2.665 4.872 4.876 2.66c.974.532.975 1.393 0 1.926l-4.875 2.666-2.664 4.876c-.53.972-1.39.973-1.924 0l-2.664-4.876L.76 10.206c-.972-.532-.973-1.393 0-1.925l4.872-2.66L8.296.746z" fill="#00C8E5"></path></svg> <svg class="confetti" height="19" viewbox="0 0 19 19" width="19" xmlns="http://www.w3.org/2000/svg"><path d="M8.296.747c.532-.972 1.393-.973 1.925 0l2.665 4.872 4.876 2.66c.974.532.975 1.393 0 1.926l-4.875 2.666-2.664 4.876c-.53.972-1.39.973-1.924 0l-2.664-4.876L.76 10.206c-.972-.532-.973-1.393 0-1.925l4.872-2.66L8.296.746z" fill="#00C8E5"></path></svg> <svg class="checkmark__check" height="36" viewbox="0 0 48 36" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M47.248 3.9L43.906.667a2.428 2.428 0 0 0-3.344 0l-23.63 23.09-9.554-9.338a2.432 2.432 0 0 0-3.345 0L.692 17.654a2.236 2.236 0 0 0 .002 3.233l14.567 14.175c.926.894 2.42.894 3.342.01L47.248 7.128c.922-.89.922-2.34 0-3.23"></path></svg> <svg class="checkmark__back" height="115" viewbox="0 0 120 115" width="120" xmlns="http://www.w3.org/2000/svg"><path d="M107.332 72.938c-1.798 5.557 4.564 15.334 1.21 19.96-3.387 4.674-14.646 1.605-19.298 5.003-4.61 3.368-5.163 15.074-10.695 16.878-5.344 1.743-12.628-7.35-18.545-7.35-5.922 0-13.206 9.088-18.543 7.345-5.538-1.804-6.09-13.515-10.696-16.877-4.657-3.398-15.91-.334-19.297-5.002-3.356-4.627 3.006-14.404 1.208-19.962C10.93 67.576 0 63.442 0 57.5c0-5.943 10.93-10.076 12.668-15.438 1.798-5.557-4.564-15.334-1.21-19.96 3.387-4.674 14.646-1.605 19.298-5.003C35.366 13.73 35.92 2.025 41.45.22c5.344-1.743 12.628 7.35 18.545 7.35 5.922 0 13.206-9.088 18.543-7.345 5.538 1.804 6.09 13.515 10.696 16.877 4.657 3.398 15.91.334 19.297 5.002 3.356 4.627-3.006 14.404-1.208 19.962C109.07 47.424 120 51.562 120 57.5c0 5.943-10.93 10.076-12.668 15.438z" fill="#00C8E5"></path></svg></div></div><h2>Parabéns!</h2><p>Você acaba de ganhar <b>R$ 100,00</b> de bônus!</p></div></div><!-- =================================== --><script src="app-b459aa3739.js"></script><!-- jQuery first, then Popper.js, then Bootstrap JS --><script src="../jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script><script src="../npm/popper.js%401.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="../bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="../assets/js/dd-2261118ce3.js" d-d-auto=""></script>
+<script async="" id="netlify-rum-container" src="../netlify-rum.js" data-netlify-rum-site-id="03fabf59-1199-43e1-8a25-9fc81fe95908" data-netlify-deploy-branch="" data-netlify-deploy-context="production" data-netlify-cwv-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzaXRlX2lkIjoiMDNmYWJmNTktMTE5OS00M2UxLThhMjUtOWZjODFmZTk1OTA4IiwiYWNjb3VudF9pZCI6IjYyZjZkYTdkYjk1MmM3MjllZWZkZTE0NSIsImRlcGxveV9pZCI6IjY0ZjU1Njk0MmQ0NzU1N2NmY2FmZDAzNCIsImlzc3VlciI6Im5mc2VydmVyIn0.Ytzo8Uj1ljApM8MdIUim-BfdUc8ekT5e2YTb8z5-iq0"></script></body></html>
